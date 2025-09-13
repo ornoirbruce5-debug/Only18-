@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👀 She Clicked. Everything Changed. 🔥</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      backdrop-filter: brightness(0.8);
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      animation: fadeIn 2s ease-in-out;
+      text-shadow: 0 0 10px #000;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+      max-width: 500px;
+      animation: fadeIn 3s ease-in-out;
+      text-shadow: 0 0 5px #000;
+    }
+    .cta-button {
+      background-color: #ff0055;
+      color: white;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 10px #ff0055;
+    }
+    .cta-button:hover {
+      background-color: #ff3366;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    #countdown {
+      font-size: 1.5em;
+      margin-top: 1em;
+      color: #ffcc00;
+      text-shadow: 0 0 5px #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>👀 She Clicked. Everything Changed. 🔥</h1>
+  <p>💬 One decision. One page. One story she couldn’t ignore. 🚪 What happens next is not what you expect. 💡</p>
+  <button class="cta-button" onclick="redirect()">❤️ Reveal the Moment ⏳</button>
+  <div id="countdown">⏳ This page disappears in 15 seconds...</div>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://onlyhotdates.com/vJZr1PqL?aid=gaddgpxkdk&kid=hakfdzbxgzk";
+    }
+
+    let seconds = 15;
+    const countdownEl = document.getElementById("countdown");
+    const timer = setInterval(() => {
+      countdownEl.textContent = `⏳ This page disappears in ${seconds} seconds...`;
+      seconds--;
+      if (seconds < 0) {
+        clearInterval(timer);
+        countdownEl.textContent = "Redirecting... 🚀";
+        redirect();
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
